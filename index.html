@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>rating</title>
+</head>
+<body>
+	<div class="main">
+		<div class="star">
+			<img src="images/icon-star.svg">
+		</div>
+		<div class="sub">
+			<span class="title">How did we do?</span>
+			<span class="text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</span>
+			<div class="ratings">
+				<button class="button" value = "1"><span>1</span></button>
+				<button class="button" value = "2"><span>2</span></button>
+				<button class="button" value = "3"><span>3</span></button>
+				<button class="button" value = "4"><span>4</span></button>
+				<button class="button" value = "5"><span>5</span></button>
+			</div>
+			<input type="submit" name="submit" value="SUBMIT" class="submit">
+		</div>
+	</div>
+	<div class="success">
+		<img src="images/illustration-thank-you.svg">
+		<span class="selected">You selected <span id="num"></span> out of 5</span>
+		<span class="title">Thank you!</span>
+		<span class="text">We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch! </span>
+	</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>

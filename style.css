@@ -1,0 +1,201 @@
+body {
+	background-color: hsl(216, 12%, 8%);
+	display: flex;
+	justify-content: center;
+	font-family: Overpass;
+	height: 97vh;
+}
+
+.main {
+	width: 90vw;
+	height: auto;
+	border-radius: 5vw;
+	background-color: hsl(213, 19%, 18%);
+	margin: auto;
+	padding: 7vw;
+	box-sizing: border-box;
+}
+
+.star {
+	background-color: hsl(213, 19%, 22%);
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+	width: 11vw;
+	height: 11vw;
+}
+
+.star img {
+	margin: auto;
+	height: 1.8vh;
+	width: auto;
+}
+
+.sub {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	color: hsl(0, 0%, 100%);
+	font-size: 1.7em;
+	line-height: 17vw;
+	letter-spacing: 0.2vw;
+	font-weight: 700;
+}
+
+.text {
+	font-size: 0.9em;
+	color: hsl(216, 12%, 54%);
+	line-height: 6vw;
+	margin-bottom: 5vw
+}
+
+.ratings {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.button {
+	background-color: hsl(213, 19%, 22%);
+	color: hsl(216, 12%, 54%);
+	text-align: center;
+	border-radius: 50%;
+	width: 12vw;
+	height: 12vw;
+	transition: 0.3s ease;
+	border-style: none;
+}
+
+.button span {
+	margin: auto;
+	font-size: 0.9em;
+	font-weight: 700;
+}
+
+.active {
+	background-color: hsl(216, 12%, 54%);
+	color: white;
+	text-align: center;
+	border-radius: 50%;
+	width: 12vw;
+	height: 12vw;
+}
+
+.active span {
+	margin: auto;
+	font-size: 0.9em;
+	font-weight: 700;
+}
+
+.button:hover {
+	background-color: hsl(25, 97%, 53%);
+	color: white;
+	transition: 0.3s ease;
+}
+
+.submit {
+	border-style: none;
+	margin-top: 7vw;
+	height: 7vh;
+	border-radius: 7vw;
+	color: white;
+	letter-spacing: 0.3em;
+	font-weight: 700;
+	background-color: hsl(25, 97%, 53%);
+	transition: 0.8s ease;
+}
+
+.submit:hover {
+	color: hsl(25, 97%, 53%);
+	background-color: white;
+	cursor: pointer;
+}
+
+.success {
+	width: 90vw;
+	height: auto;
+	border-radius: 5vw;
+	background-color: hsl(213, 19%, 18%);
+	margin: auto;
+	padding: 4vw;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	display: none;
+}
+
+.success img {
+	width: 50%;
+	margin: auto;	
+}
+
+.selected {
+	font-size: 0.7em;
+	background-color: hsl(213, 19%, 22%);
+	color: hsl(25, 97%, 53%);
+	padding: 2vw;
+	text-align: center;
+	margin: auto;
+	width: 40vw;
+	border-radius: 7vw;
+	margin-top: 7vw;
+	margin-bottom: 3vw;
+}
+
+
+/* desktop display */
+@media (min-width: 769px) {
+	.main {
+		width: 45vw;
+		border-radius: 3vw;
+		padding: 4vw;
+	}
+
+	.star {
+		width: 4vw;
+		height: 4vw;
+	}
+
+	.title {
+		line-height: 8vw;
+		font-size: 2em;
+	}
+
+	.text{
+		line-height: 2.5vw;
+		font-size: 1.2em;
+		margin-bottom: 1.5vw;
+	}
+
+	.button {
+		width: 5vw;
+		height: 5vw;
+	}
+
+	.button span {
+		font-size: 1.5em;
+	}
+
+	.submit {
+		margin-top: 3vw;
+		height: 6vw;
+	}
+
+	.success {
+		width: 45vw;
+		padding: 4vw;
+		border-radius: 3vw;
+	}
+
+	.selected {
+		font-size: 1em;
+		padding: 1vw;
+		width: 20vw;
+		margin-top: 3vw;
+		margin-bottom: 0;
+
+	}
+}
